@@ -4,133 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfólio de [Seu Nome]</title>
+    <title>Meu Portfólio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f4f4;
+            color: #333;
         }
+
         header {
             background-color: #333;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 1rem;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav ul li {
-            margin: 0 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+
         section {
-            padding: 2rem;
-            margin: 1rem;
+            padding: 20px;
+            margin: 20px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
+
         h1, h2 {
             color: #333;
         }
-        .skills ul {
-            list-style: none;
+
+        ul {
+            list-style-type: none;
             padding: 0;
         }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .skills li {
-            background-color: #f1f1f1;
-            margin: 5px 0;
+            margin-right: 10px;
             padding: 10px;
+            background-color: #ddd;
             border-radius: 5px;
         }
+
+        .projects .project {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
             background-color: #333;
             color: white;
+            padding: 10px;
             text-align: center;
-            padding: 1rem;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>[Seu Nome]</h1>
-        <p>Desenvolvedor Web | Designer | Criativo</p>
+        <h1>Bem-vindo ao Meu Portfólio</h1>
+        <p>Sou [Seu Nome], um desenvolvedor web apaixonado por criar soluções inovadoras.</p>
     </header>
 
-    <nav>
+    <section class="about">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor web com experiência em criar sites e aplicativos dinâmicos. Tenho uma forte paixão por aprender novas tecnologias e sempre busco melhorar minhas habilidades. Além disso, adoro colaborar em projetos criativos que tragam valor aos usuários.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Minhas Habilidades</h2>
         <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git</li>
+            <li>SQL</li>
         </ul>
-    </nav>
+    </section>
 
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Meu nome é [Seu Nome]. Sou desenvolvedor web apaixonado por criar soluções digitais criativas. Tenho experiência em várias tecnologias e adoro aprender novas ferramentas para melhorar minhas habilidades.</p>
+    <section class="projects">
+        <h2>Projetos</h2>
+        <div class="project">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1.</p>
+            <a href="#">Ver mais</a>
+        </div>
+        <div class="project">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2.</p>
+            <a href="#">Ver mais</a>
+        </div>
+        <div class="project">
+            <h3>Projeto 3</h3>
+            <p>Descrição do projeto 3.</p>
+            <a href="#">Ver mais</a>
         </div>
     </section>
 
-    <section id="habilidades">
-        <div class="container">
-            <h2>Minhas Habilidades</h2>
-            <div class="skills">
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Git</li>
-                    <li>Design Responsivo</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projetos">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="project">
-                <h3>Projeto 1: [Nome do Projeto]</h3>
-                <p>Descrição do projeto, as tecnologias utilizadas, e seu impacto.</p>
-                <a href="[Link para o Projeto]" target="_blank">Ver Projeto</a>
-            </div>
-            <div class="project">
-                <h3>Projeto 2: [Nome do Projeto]</h3>
-                <p>Descrição do projeto, as tecnologias utilizadas, e seu impacto.</p>
-                <a href="[Link para o Projeto]" target="_blank">Ver Projeto</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato comigo para discutir sobre projetos, oportunidades de trabalho ou colaborações.</p>
-            <p>Email: [seuemail@dominio.com]</p>
-            <p>Telefone: [seu número]</p>
+    <section class="contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:seuemail@example.com">seuemail@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/seunome" target="_blank">linkedin.com/in/seunome</a></p>
+            <p>GitHub: <a href="https://github.com/seunome" target="_blank">github.com/seunome</a></p>
         </div>
     </section>
 
